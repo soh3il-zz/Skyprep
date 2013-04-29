@@ -1,0 +1,715 @@
+//
+// skyprep
+// --------------------------------------------------
+
+// General
+body {
+  background-color: #ebebeb;
+}
+
+ul, li {
+  list-style: none outside none;
+  margin: 0;
+  padding: 0;
+}
+
+// header
+header {
+  background-color: $blue;
+  padding: 15px 0;
+}
+
+.logo {
+  display: block;
+  @include size(50px, 150px);
+  background-image: url(../img/header/skyprep-logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  float: left;
+}
+
+.header-nav {
+  @extend .clearfix;
+  list-style: none outside none;
+  margin: 5px 0 0;
+  float: left;
+
+  li {
+    float: left;
+    margin-left: 35px;
+
+    a {
+      color: $white;
+      font-size: 16px;
+      font-weight: 500;
+      text-decoration: none;
+      display: block;
+      padding: 10px;
+    }
+
+  } // li
+} // header-nav
+
+.try-skyprep-nav {
+  list-style: none outside none;
+  float: right;
+  margin: 10px 0 0;
+
+  li {
+    float: right;
+
+    a {
+      font-size: 16px;
+      color: $white;
+      font-weight: 400;
+      text-decoration: none;
+      display: block;
+      padding: 5px 10px;
+
+    } // a
+  } // li
+
+  li:first-child {
+    border-left: 1px solid rgba(255, 255, 255, 0.30)
+  }
+
+  li:last-child {
+    padding: 5px 10px;
+    color: rgba(255, 255, 255, 0.60);
+  }
+
+} // try-skyprep-nav
+
+
+// Hero Section
+
+.hero_message {
+  float: left;
+  width: 55%;
+  text-shadow: 0 1px 1px $white;
+  padding: 70px 0 30px 0;
+  margin-bottom: 60px;
+
+  h1 {
+    color: $blue;
+    font-size: 28px;
+    margin: 0;
+  }
+
+  h2 {
+    color: $gray;
+    font-size: 24px;
+    margin: 0 0 20px;
+    line-height: 30px;
+    font-weight: 400;
+  }
+
+  p {
+    color: $grayLight;
+    font-size: 18px;
+  }
+
+  .btn-flat {
+    margin-top: 25px;
+  }
+} // hero_message
+
+.skyprep-mac-preview {
+  float: right;
+  @include size(auto, 45%);
+  margin-top: 45px;
+}
+
+// Highlights Section
+
+.highlights-section {
+  background-color: #e3e3e3;
+  border-top: 1px solid #d0d0d0;
+  border-bottom: 1px solid #d0d0d0;
+  padding: 15px 0;
+
+  ul {
+    @extend .clearfix;
+
+    >li {
+      float: left;
+      width: 300px;
+      margin: 30px 20px 30px 0;
+      color: $grayLight;
+      text-shadow: 0 1px 1px $white;
+
+      h4 {
+        color: $gray;
+      }
+
+
+      i {
+        float: left;
+        color: $blue;
+        font-size: 40px;
+        margin-right: 10px;
+      } // i
+
+    } // li
+
+    li:nth-child(3n) {
+      margin-right: 0;
+    }
+
+  } // ul
+} // highlits-section
+
+hr {
+  @include doubleborder('bottom', lighten($grayLight, 20%), $white);
+}
+
+// Utilities
+
+//
+// Ribbons
+// --------------------------------------------------
+.ribbon {
+  width: 85px;
+  height: 88px;
+  overflow: hidden;
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  z-index: 10;
+}
+
+.ribbon span {
+  @include rotate(-45deg);
+  @include box-shadow(0px 0px 3px rgba(0,0,0,0.3));
+  display: block;
+  position: relative;
+  padding: 8px 0;
+  left: -29px;
+  top: 15px;
+  width: 120px;
+
+  font: 14px $sansFontFamily;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: rgba(0,0,0,0.3) 0px -1px 0px;
+
+  &:before,
+  &:after {
+    content: "";
+    border-left:  3px solid transparent;
+    border-right: 3px solid transparent;
+    position:absolute;
+    bottom: -3px;
+  }
+
+  &:before  {left:0;}
+  &:after   {right:0;}
+}
+
+.ribbon-green span {
+	@include gradient-vertical(lighten($green, 10), $green);
+  color: $white;
+  &:before, &:after {border-top: 3px solid darken($green, 10)}
+}
+
+.ribbon-orange span {
+  @include gradient-vertical(lighten($orange, 10), $orange);
+  color: $white;
+  &:before, &:after {border-top: 3px solid lighten($orange, 10);}
+}
+
+.ribbon-red span {
+  @include gradient-vertical(lighten($red, 10), $red);
+  color: $white;
+  &:before, &:after {border-top: 3px solid lighten($red, 10);}
+}
+
+.face-display {
+  @include border-radius(200px);
+  @include size (110px, 110px);
+  border: 5px solid #c5cad4;
+  @include background-size(cover);
+  @include box-shadow( 2px 2px 5px rgba(0, 0, 0, 0.5) inset,
+              0 0 2px 1px rgba(0, 0, 0, 0.05) inset);
+}
+
+.white-box {
+  background-color: $white;
+  border: 1px solid darken($grayLighter, 5%);
+  padding: 25px;
+  color: $grayLight;
+  @include border-radius(4px);
+}
+
+.arrow-up {
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+
+	border-bottom: 10px solid black;
+}
+
+.arrow-down {
+	width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+
+	border-top: 20px solid #f00;
+}
+
+.arrow-right {
+	width: 0;
+	height: 0;
+	border-top: 60px solid transparent;
+	border-bottom: 60px solid transparent;
+
+	border-left: 60px solid green;
+}
+
+.arrow-left {
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+
+	border-right:10px solid blue;
+}
+
+.quote-sign {
+  color: $blue;
+  font-size: 74px;
+  font-weight: 700;
+  font-family: $serifFontFamily;
+}
+
+// Homepage Quote
+
+.homepage-quote {
+  border-bottom: 1px solid #d0d0d0;
+  color: $green;
+  padding: 60px 0;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 36px;
+  text-shadow: 0 1px 1px $white;
+
+  span {
+    font-size: 60px;
+    font-family: $serifFontFamily;
+    line-height: 18px;
+    vertical-align: -22px;
+  }
+
+  .line1 {
+    text-align: left;
+  }
+
+  .line2 {
+    text-align: right;
+  }
+
+}
+
+
+// Testimonials Section
+
+.testimonials {
+  background-color: #e3e3e3;
+
+  h3 {
+    text-align: center;
+    padding: 30px 0;
+    text-shadow: 0 1px 1px $white;
+  }
+
+  ul {
+  @extend .clearfix;
+
+    li {
+    float: left;
+    width: 300px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+
+    .face-display {
+      margin: auto;
+    }
+
+    .white-box {
+      position: relative;
+      margin-top: 30px;
+      font-style: italic;
+      font-size: 16px;
+      font-weight: 400;
+
+      .arrow-up {
+        position: absolute;
+        top: -10px;
+        left: 48%;
+        border-bottom: 11px solid $white;
+      }
+
+      .quote-sign {
+        position: absolute;
+        left: -10px;
+        top: 10px;
+        font-style: normal;
+      }
+
+    } // white-box
+
+    .testimonial-author {
+      float: right;
+      color: $grayLight;
+      padding: 5px 0;
+      text-shadow: 0 1px 1px $white;
+      }
+    } // li
+
+    li:nth-child(3n) {
+      margin-right: 0;
+    }
+
+  } //ul
+} // testimonials
+
+// feature-list
+
+.feature-page {
+  padding: 60px 0;
+
+  h2 {
+    color: $blue;
+    text-align: center;
+    text-shadow: 0 1px 1px $white;
+  }
+
+  p {
+    color: $gray;
+    text-shadow: 0 1px 1px $white;
+  }
+
+}
+
+.feature-list {
+  @extend .clearfix;
+
+  > li {
+    @extend .white-box;
+    padding: 0;
+    @include box-shadow (0 1px 2px #D0D0D0);
+    float: left;
+    margin: 30px 60px 30px 0;
+    width: 438px;
+
+
+    .feature-title {
+
+      background-color: lighten($grayLighter, 3%);
+      padding: 20px 10px;
+      font-size: 22px;
+      font-weight: 500;
+      @include border-top-radius (4px);
+      text-shadow: 0 1px 1px $white;
+
+      i {
+        margin-right: 5px;
+      }
+
+    } // feature-title
+  } // li
+
+  > li:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  .feature-items {
+    margin: 10px;
+
+    li:before {
+    content: "• ";
+    color: $blue;
+    font-size: 28px;
+    vertical-align: -5px;
+    }
+
+    li {
+      border-bottom: 1px solid #E8E8E8;
+      padding: 10px 0;
+    }
+
+    li:last-child {
+      border-bottom: none;
+    }
+  }
+
+}
+
+// Skyprep Banner
+
+.skyprep-banner {
+  background-color: #c7ccd5;
+  padding: 15px 0;
+  border-top: 1px solid #d0d0d0;
+
+  h2, h3 {
+    text-shadow: 0 1px 1px $white;
+  }
+
+  h2 {
+    color: $blue;
+    margin-bottom: 2px;
+  }
+
+  h3 {
+    color: $gray;
+    font-size: 24px;
+    margin: 0 0 20px;
+    line-height: 30px;
+    font-weight: 400;
+  }
+
+  .btn-flat {
+    float: right;
+    margin-top: 20px;
+  }
+
+  .banner-msg {
+    float: left;
+  }
+}
+
+// Testimonial page
+
+.testimonial-page-wrapper {
+
+  h2 {
+    text-align: center;
+    text-shadow: 0 1px 1px $white;
+    color: $blue;
+    padding: 60px 0;
+  }
+
+  .testimonials {
+    padding-bottom: 40px;
+  }
+
+  .testimonial-client-list {
+    border-top: 1px solid #d0d0d0;
+    padding: 40px 0;
+
+    h3 {
+      text-align: center;
+      color: $gray;
+      margin-bottom: 60px;
+    }
+
+    ul {
+      @extend .clearfix;
+
+      li {
+        @extend .white-box;
+        float: left;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        width: 300px;
+        padding: 19px;
+        width: 260px;
+        text-align: center;
+
+        img {
+          height: 120px;
+          width: auto;
+        }
+      } // li
+
+      li:nth-child(3n) {
+        margin-right: 0;
+      }
+    } // ul
+  } // ul
+} // .testimonial-page-wrapper
+
+// Pricing
+
+.pricing-plan {
+  padding: 40px 0;
+
+  h2, h3 {
+    text-align: center;
+    text-shadow: 0 1px 1px $white;
+  }
+
+  h2 {
+    color: $blue;
+
+  }
+
+  h3 {
+    color: $grayLight;
+    font-weight: 400;
+  }
+
+}
+
+.pricing-table {
+  @extend .clearfix;
+  margin-top: 40px;
+
+  > li {
+    @extend .white-box;
+    width: 168px;
+    float: left;
+    margin-right: 20px;
+    @include box-shadow (0 1px 2px #D0D0D0);
+    padding: 0;
+    width: 218px;
+    position: relative;
+
+  }
+
+  li:last-child {
+    margin-right: 0
+  }
+}
+
+.price-plan-title {
+  background-color: lighten($grayLighter, 3%);
+  text-align: center;
+  padding: 20px;
+  font-size: 22px;
+  font-weight: 500;
+  @include border-top-radius (4px);
+  text-shadow: 0 1px 1px $white;
+}
+
+.price-amount, .per-month {
+  color: $green;
+  text-align: center
+}
+
+.price-amount {
+  font-size: 34px;
+  font-weight: 500;
+  padding: 30px 0 10px;
+}
+
+.per-month {
+  margin-bottom: 30px;
+}
+
+.plan-features {
+  margin: 10px;
+
+  li {
+    border-top: 1px solid #E8E8E8;
+    padding: 10px 0;
+    text-align: center;
+  }
+}
+
+.pricing-additional-info {
+  text-align: center;
+  padding: 60px 0 40px;
+  text-shadow: 0 1px 1px $white;
+  color: $grayLight;
+
+  .line1 {
+    font-size: 22px;
+    font-weight: 500;
+  }
+
+  .line2 {
+    padding: 10px 0;
+    font-size: 16px;
+  }
+}
+
+.pricing-action-wrapper {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.selling-courses {
+  padding: 10px 0;
+}
+
+// FAQ
+
+.faq {
+    h2 {
+    text-align: center;
+    color: $blue;
+    margin-bottom: 40px;
+    text-shadow: 0 1px 1px $white;
+  }
+}
+
+.faq-list {
+  @extend .clearfix;
+
+  li {
+    float: left;
+    width: 45%;
+    margin-right: 10%;
+    margin-bottom: 50px;
+
+    h4 {
+      margin-bottom: 20px;
+      color: $gray;
+      text-shadow: 0 1px 1px $white;
+      line-height: 24px;
+      font-size: 20px;
+    }
+
+    p {
+      margin-bottom: 40px;
+      color: darken($grayLight, 5%);
+      text-shadow: 0 1px 1px $white;
+    }
+  }
+
+  li:nth-child(2n) {
+    margin-right: 0;
+  }
+
+}
+
+// footer
+
+footer {
+  background-color: $blue;
+  padding: 20px 0;
+
+  .footer-nav {
+    @extend .clearfix;
+
+    li.column {
+      float: left;
+      margin-right: 62px;
+
+
+
+       a {
+        display: block;
+        color: rgba(255, 255, 255, 0.60);
+        padding: 5px 0;
+
+      } // a
+    } // li
+
+    li:last-child {
+      margin-right: 0;
+    }
+
+    .info-column {
+      color: $white;
+
+      div {
+        padding: 5px 0;
+      }
+    }
+  } // footer-nav
+} // footer
