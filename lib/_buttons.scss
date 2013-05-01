@@ -230,6 +230,11 @@ input[type="submit"].btn {
 // Flat Buttons
 // --------------------------------------------------
 
+// Flat Buttons
+// --------------------------------------------------
+
+// btn-blue
+
 .btn-flat,
 .btn-flat:active,
 .btn-flat[disabled] {
@@ -257,3 +262,31 @@ input[type="submit"].btn {
   color: $white;
 }
 
+// btn-green
+
+.btn-flat-green,
+.btn-flat-green:active,
+.btn-flat-green[disabled] {
+  background-color: $green;
+  background-image: none;
+  @include box-shadow(none);
+  border: none;
+}
+.btn-flat-green {
+  background-color: $green;
+  cursor: pointer;
+  @include border-radius(4px);
+  color: $white;
+  text-shadow: none;
+}
+.btn-flat-green:hover,
+.btn-flat-green:focus {
+  text-decoration: none;
+  color: $white;
+  background-color: darken($green, 5%);
+}
+.btn-flat-green[disabled]:hover,
+.btn-flat-green[disabled]:focus {
+  text-decoration: none;
+  color: $white;
+}

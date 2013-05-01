@@ -3353,6 +3353,36 @@ input[type="submit"].btn {
   text-decoration: none;
   color: white; }
 
+.btn-flat-green,
+.btn-flat-green:active,
+.btn-flat-green[disabled] {
+  background-color: #60a205;
+  background-image: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border: none; }
+
+.btn-flat-green {
+  background-color: #60a205;
+  cursor: pointer;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  color: white;
+  text-shadow: none; }
+
+.btn-flat-green:hover,
+.btn-flat-green:focus {
+  text-decoration: none;
+  color: white;
+  background-color: #518904; }
+
+.btn-flat-green[disabled]:hover,
+.btn-flat-green[disabled]:focus {
+  text-decoration: none;
+  color: white; }
+
 .btn-group {
   position: relative;
   display: inline-block;
@@ -5921,6 +5951,41 @@ hr {
     text-shadow: 0 1px 1px white; }
 .faq-list li:nth-child(2n) {
   margin-right: 0; }
+
+.signup-heading {
+  -webkit-box-shadow: 0 1px 2px #d0d0d0;
+  -moz-box-shadow: 0 1px 2px #d0d0d0;
+  box-shadow: 0 1px 2px #d0d0d0;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #d0d0d0;
+  margin-bottom: 2px;
+  padding: 30px 0; }
+  .signup-heading h2, .signup-heading h3 {
+    text-align: center;
+    margin: 0;
+    text-shadow: 0 1px 1px white; }
+  .signup-heading h2 {
+    color: #60a205; }
+  .signup-heading h3 {
+    color: #999999;
+    font-weight: 400;
+    margin-top: 5px; }
+
+.signup-form {
+  padding: 40px 0;
+  margin: auto;
+  width: 24%;
+  text-shadow: 0 1px 1px white; }
+  .signup-form input {
+    height: 42px;
+    margin-bottom: 20px; }
+  .signup-form .input-append .add-on, .signup-form .input-prepend .add-on {
+    padding: 10px 5px; }
+  .signup-form .checkbox input {
+    height: auto; }
+  .signup-form .signup-action-wrapper {
+    text-align: center;
+    margin-top: 20px; }
 
 footer {
   background-color: #2f5595;

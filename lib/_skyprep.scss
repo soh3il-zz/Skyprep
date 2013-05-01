@@ -677,6 +677,65 @@ hr {
 
 }
 
+// Signup
+
+.signup-wrapper {
+
+}
+
+.signup-heading {
+
+  @include box-shadow (0 1px 2px #D0D0D0);
+  background-color: lighten(#ebebeb, 5%);
+  border-bottom: 1px solid #d0d0d0;
+  margin-bottom: 2px;
+  padding: 30px 0;
+
+  h2, h3 {
+    text-align: center;
+    margin: 0;
+    text-shadow: 0 1px 1px $white;
+  }
+
+  h2 {
+    color: $green;
+  }
+
+  h3 {
+    color: $grayLight;
+    font-weight: 400;
+    margin-top: 5px;
+  }
+
+} // signup-heading
+
+.signup-form {
+  padding: 40px 0;
+  margin: auto;
+  width: 24%;
+  text-shadow: 0 1px 1px $white;
+
+  input {
+    height: 42px;
+    margin-bottom: 20px;
+  }
+
+  .input-append .add-on, .input-prepend .add-on {
+    padding: 10px 5px
+  }
+
+  .checkbox {
+    input {
+      height: auto;
+    }
+  } // checkbox
+
+  .signup-action-wrapper {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
 // footer
 
 footer {
