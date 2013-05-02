@@ -5428,13 +5428,13 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
 .affix {
   position: fixed; }
 
-.clearfix, .header-nav, .highlights-section ul, .testimonials ul, .feature-list, .testimonial-page-wrapper .testimonial-client-list ul, .pricing-table, .faq-list, footer .footer-nav {
+.clearfix, .header-nav, .highlights-section ul, .testimonials ul, .feature-list, .marketplace_cards, .testimonial-page-wrapper .testimonial-client-list ul, .pricing-table, .faq-list, footer .footer-nav {
   *zoom: 1; }
-  .clearfix:before, .header-nav:before, .highlights-section ul:before, .testimonials ul:before, .feature-list:before, .testimonial-page-wrapper .testimonial-client-list ul:before, .pricing-table:before, .faq-list:before, footer .footer-nav:before, .clearfix:after, .header-nav:after, .highlights-section ul:after, .testimonials ul:after, .feature-list:after, .testimonial-page-wrapper .testimonial-client-list ul:after, .pricing-table:after, .faq-list:after, footer .footer-nav:after {
+  .clearfix:before, .header-nav:before, .highlights-section ul:before, .testimonials ul:before, .feature-list:before, .marketplace_cards:before, .testimonial-page-wrapper .testimonial-client-list ul:before, .pricing-table:before, .faq-list:before, footer .footer-nav:before, .clearfix:after, .header-nav:after, .highlights-section ul:after, .testimonials ul:after, .feature-list:after, .marketplace_cards:after, .testimonial-page-wrapper .testimonial-client-list ul:after, .pricing-table:after, .faq-list:after, footer .footer-nav:after {
     display: table;
     content: "";
     line-height: 0; }
-  .clearfix:after, .header-nav:after, .highlights-section ul:after, .testimonials ul:after, .feature-list:after, .testimonial-page-wrapper .testimonial-client-list ul:after, .pricing-table:after, .faq-list:after, footer .footer-nav:after {
+  .clearfix:after, .header-nav:after, .highlights-section ul:after, .testimonials ul:after, .feature-list:after, .marketplace_cards:after, .testimonial-page-wrapper .testimonial-client-list ul:after, .pricing-table:after, .faq-list:after, footer .footer-nav:after {
     clear: both; }
 
 .hide-text {
@@ -5800,6 +5800,106 @@ hr {
     padding: 10px 0; }
   .feature-list .feature-items li:last-child {
     border-bottom: none; }
+
+.marketplace-page {
+  padding: 40px 0; }
+  .marketplace-page h2 {
+    color: #2f5595;
+    text-align: center;
+    text-shadow: 0 1px 1px white; }
+  .marketplace-page p {
+    color: #555555;
+    text-shadow: 0 1px 1px white; }
+
+.marketpalce-filters {
+  text-align: center;
+  margin: 20px 0; }
+
+.marketplace_cards {
+  margin-top: 60px; }
+  .marketplace_cards li {
+    width: 298px;
+    margin: 0 20px 20px 0;
+    float: left;
+    border: 1px solid #e6e6e6;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    position: relative; }
+    .marketplace_cards li > a {
+      display: block;
+      cursor: pointer; }
+      .marketplace_cards li > a:hover {
+        text-decoration: none; }
+  .marketplace_cards li:nth-child(3n) {
+    margin-right: 0; }
+  .marketplace_cards .rating-stars {
+    color: #f89406;
+    position: absolute;
+    bottom: 5px;
+    right: 10px; }
+
+.marketplace_card_cover {
+  background-position: center center;
+  background-size: cover;
+  height: 140px;
+  position: relative;
+  -webkit-border-top-right-radius: 4px;
+  -moz-border-radius-topright: 4px;
+  border-top-right-radius: 4px;
+  -webkit-border-top-left-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+  border-top-left-radius: 4px; }
+
+.marketplace_card_footer {
+  background-color: white;
+  padding: 0 10px;
+  font-weight: 500;
+  font-size: 16px;
+  -webkit-border-bottom-right-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  border-bottom-right-radius: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  border-bottom-left-radius: 4px; }
+
+.marketplace_card_name {
+  color: black;
+  width: 420px;
+  display: table-cell;
+  vertical-align: middle;
+  height: 75px; }
+
+.marketplace_card_price {
+  color: #60a205;
+  display: table-cell;
+  text-align: right;
+  vertical-align: middle;
+  width: 120px; }
+
+.marketplace-card-owner-name {
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  color: white;
+  font-weight: 600;
+  text-shadow: 0 1px 1px black; }
+
+.marketplace-card-cover-image-gradient {
+  background-color: rgba(0, 0, 0, 0) !important;
+  background-color: rgba(0, 0, 0, 0.16);
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.4)));
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#66000000', GradientType=0);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 140px;
+  width: 100%; }
 
 .skyprep-banner {
   background-color: #c7ccd5;

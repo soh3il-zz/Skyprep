@@ -447,6 +447,116 @@ hr {
 
 }
 
+// Marketplace
+
+.marketplace-page {
+  padding: 40px 0;
+
+  h2 {
+    color: $blue;
+    text-align: center;
+    text-shadow: 0 1px 1px $white;
+  }
+
+  p {
+    color: $gray;
+    text-shadow: 0 1px 1px $white;
+  }
+
+}
+
+.marketpalce-filters {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.marketplace_cards {
+  margin-top: 60px;
+  @extend .clearfix;
+
+  li {
+    width: 298px;
+    margin: 0 20px 20px 0;
+    float: left;
+    border: 1px solid darken($grayLighter, 3%);
+    @include border-radius (4px);
+    position: relative;
+
+    > a {
+      display: block;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  li:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  .rating-stars {
+    color: $orange;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+  }
+
+} // home_marketplace_cards
+
+.marketplace_card_cover {
+  background-position: center center;
+  background-size: cover;
+  height: 140px;
+  position: relative;
+  @include border-top-radius (4px);
+}
+
+.marketplace_card_footer {
+  background-color: $white;
+  padding: 0 10px;
+  font-weight: 500;
+  font-size: 16px;
+  @include border-bottom-radius (4px);
+}
+
+.marketplace_card_name {
+  color: $black;
+  width: 420px;
+  display: table-cell;
+  vertical-align: middle;
+  height: 75px;
+}
+
+.marketplace_card_price {
+  color: $green;
+  display: table-cell;
+  text-align: right;
+  vertical-align: middle;
+  width: 120px;
+}
+
+.marketplace-card-owner-name {
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  color: $white;
+  font-weight: 600;
+  text-shadow: 0 1px 1px $black;
+}
+
+.marketplace-card-cover-image-gradient {
+  background-color: rgba(0,0,0, 0) !important;
+  @include gradient-vertical(rgba(0,0,0, 0), rgba(0,0,0, .4));
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 140px;
+  width: 100%;
+}
+
+
 // Skyprep Banner
 
 .skyprep-banner {
