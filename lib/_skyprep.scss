@@ -736,6 +736,99 @@ hr {
   }
 }
 
+// Tour page
+
+.tour-wrapper {
+  padding: 30px 0;
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 28px;
+    font-weight: 400;
+    color: $gray;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 26px;
+    text-shadow: 0 1px 1px $white;
+    color: lighten($gray, 5%);
+    margin-bottom: 80px;
+    overflow: hidden;
+  }
+}
+
+#user-management {
+
+  img {
+    float: left;
+    margin: 10px 35px 0 0;
+    width: 75px;
+    height: auto;
+  }
+}
+
+#platform-branding, #eCommerce-platform {
+
+  img {
+    float: right;
+    margin: 10px 0 0 35px;
+    width: 150px;
+    height: auto;
+  }
+}
+
+#security-assurance {
+
+  img {
+    float: left;
+    margin: 10px 35px 0 0;
+    width: 150px;
+    height: auto;
+  }
+}
+
+.page-header {
+  @include doubleborder(bottom, lighten($grayLight, 15%), $white);
+}
+
+.sidenav.affix {
+  top: 15px;
+}
+
+.sidenav{
+  margin-top: 20px;
+
+  li {
+
+    a {
+      color: $blue;
+      padding: 15px 0;
+      font-weight: 500;
+      display: block;
+      text-shadow: 0 1px 1px $white;
+
+      &:hover {
+        text-decoration: none;
+      }
+
+      i {
+        font-size: 18px;
+        vertical-align: -1px;
+        margin-right: 10px;
+      } // i
+     } // a
+
+     &.active {
+       a {
+         color: $gray;
+       }
+     }
+   } // li
+} // sidenav
+
 // footer
 
 footer {
