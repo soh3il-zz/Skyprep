@@ -5656,7 +5656,7 @@ hr {
   -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5) inset, 0 0 2px 1px rgba(0, 0, 0, 0.05) inset;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5) inset, 0 0 2px 1px rgba(0, 0, 0, 0.05) inset; }
 
-.white-box, .feature-list > li, .testimonial-page-wrapper .testimonial-client-list ul li, .pricing-table > li {
+.white-box, .feature-list > li, .course-price-box, .testimonial-page-wrapper .testimonial-client-list ul li, .pricing-table > li {
   background-color: white;
   border: 1px solid #e1e1e1;
   padding: 25px;
@@ -5730,18 +5730,18 @@ hr {
     margin-bottom: 30px; }
     .testimonials ul li .face-display {
       margin: auto; }
-    .testimonials ul li .white-box, .testimonials ul li .feature-list > li, .testimonials .testimonial-page-wrapper .testimonial-client-list ul li li, .testimonial-page-wrapper .testimonial-client-list .testimonials ul li li, .testimonials ul li .pricing-table > li {
+    .testimonials ul li .white-box, .testimonials ul li .feature-list > li, .testimonials ul li .course-price-box, .testimonials .testimonial-page-wrapper .testimonial-client-list ul li li, .testimonial-page-wrapper .testimonial-client-list .testimonials ul li li, .testimonials ul li .pricing-table > li {
       position: relative;
       margin-top: 30px;
       font-style: italic;
       font-size: 16px;
       font-weight: 400; }
-      .testimonials ul li .white-box .arrow-up, .testimonials ul li .feature-list > li .arrow-up, .testimonials .testimonial-page-wrapper .testimonial-client-list ul li li .arrow-up, .testimonial-page-wrapper .testimonial-client-list .testimonials ul li li .arrow-up, .testimonials ul li .pricing-table > li .arrow-up {
+      .testimonials ul li .white-box .arrow-up, .testimonials ul li .feature-list > li .arrow-up, .testimonials ul li .course-price-box .arrow-up, .testimonials .testimonial-page-wrapper .testimonial-client-list ul li li .arrow-up, .testimonial-page-wrapper .testimonial-client-list .testimonials ul li li .arrow-up, .testimonials ul li .pricing-table > li .arrow-up {
         position: absolute;
         top: -10px;
         left: 48%;
         border-bottom: 11px solid white; }
-      .testimonials ul li .white-box .quote-sign, .testimonials ul li .feature-list > li .quote-sign, .testimonials .testimonial-page-wrapper .testimonial-client-list ul li li .quote-sign, .testimonial-page-wrapper .testimonial-client-list .testimonials ul li li .quote-sign, .testimonials ul li .pricing-table > li .quote-sign {
+      .testimonials ul li .white-box .quote-sign, .testimonials ul li .feature-list > li .quote-sign, .testimonials ul li .course-price-box .quote-sign, .testimonials .testimonial-page-wrapper .testimonial-client-list ul li li .quote-sign, .testimonial-page-wrapper .testimonial-client-list .testimonials ul li li .quote-sign, .testimonials ul li .pricing-table > li .quote-sign {
         position: absolute;
         left: -10px;
         top: 10px;
@@ -5918,6 +5918,10 @@ hr {
     width: 600px;
     margin-left: 25px;
     float: left; }
+
+.course-price-box {
+  float: right;
+  width: 220px; }
 
 .course-description {
   margin-top: 20px; }

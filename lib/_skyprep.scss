@@ -587,6 +587,12 @@ hr {
 
 }
 
+.course-price-box {
+  float: right;
+  @extend .white-box;
+  width: 220px;
+}
+
 .course-description {
   margin-top: 20px;
 }
