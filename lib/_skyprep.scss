@@ -556,6 +556,50 @@ hr {
   width: 100%;
 }
 
+// Marketplace Singe page
+
+#marketplace-single-page {
+
+  padding: 40px 0;
+
+  h1 {
+    font-size: 31.5px;
+    color: $blue;
+  }
+
+  .breadcrumb {
+    background-color: transparent;
+    padding: 5px 0;
+  }
+
+  .rating-stars {
+    color: #F89406;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .marketplace-single-item-cover {
+    height: 243px;
+    width: 600px;
+    margin-left: 25px;
+    float: left;
+  }
+
+}
+
+.course-description {
+  margin-top: 20px;
+}
+
+.course-price {
+  color: $green;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 500;
+  text-shadow: 0 1px 1px $white;
+  margin-bottom: 20px;
+}
+
 
 // Skyprep Banner
 
