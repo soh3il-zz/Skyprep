@@ -5934,6 +5934,53 @@ hr {
   text-shadow: 0 1px 1px white;
   margin-bottom: 20px; }
 
+#test-maker-page {
+  margin-top: 20px; }
+  #test-maker-page #appendedPrependedInput {
+    width: 86px; }
+
+.test-maker-signup {
+  float: right; }
+  .test-maker-signup h4 {
+    color: #2f5595;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #bfbfbf;
+    -webkit-box-shadow: 0 1px 0 white;
+    -moz-box-shadow: 0 1px 0 white;
+    -o-box-shadow: 0 1px 0 white;
+    box-shadow: 0 1px 0 white; }
+
+.test-maker-pitch {
+  float: left; }
+  .test-maker-pitch h3 {
+    margin-bottom: 0; }
+  .test-maker-pitch h4 {
+    margin-top: 0;
+    color: #555555; }
+  .test-maker-pitch p {
+    margin-bottom: 40px;
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 26px; }
+  .test-maker-pitch img {
+    float: right;
+    width: auto;
+    height: 140px;
+    margin-left: 10px;
+    margin-bottom: 50px; }
+
+.test-maker-list li {
+  color: #555555;
+  text-shadow: 0 1px 1px white;
+  padding: 5px 0;
+  font-weight: 400; }
+.test-maker-list li:before {
+  content: "• ";
+  color: #2f5595;
+  font-size: 28px;
+  vertical-align: -5px; }
+
 .skyprep-banner {
   background-color: #c7ccd5;
   padding: 15px 0;
