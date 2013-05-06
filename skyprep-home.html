@@ -9,7 +9,7 @@
 
     <!-- Le styles -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
     <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -26,24 +26,25 @@
 
   </head>
 
-  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+  <body>
 
     <header>
       <div class="container">
         <a class="logo" href="#"></a>
-        <ul class="header-nav clearfix">
+        <ul class="header-nav hidden-phone clearfix">
           <li><a href="#">Tour</a></li>
           <li><a href="#">Features</a></li>
           <li><a href="#">Pricing</a></li>
-          <li><a href="#">Signup</a></li>
+          <li class="hidden-phone"><a href="#">Signup</a></li>
         </ul>
 
         <ul class="try-skyprep-nav">
           <li><a href="#myModal" data-toggle="modal">Sign in</a></li>
           <li><a href="#">Demo</a></li>
-          <li>Try Skyprep Software</li>
+          <li class="visible-desktop">Try Skyprep Software</li>
         </ul>
       </div>
+
 
       <!-- Modal -->
       <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -82,17 +83,33 @@
 
     </header>
 
-
+    <div class="navbar navbar-skyprep visible-phone">
+      <div class="navbar-inner">
+      <ul class="nav">
+      <li class="active"><a href="#">Tour</a></li>
+      <li><a href="#">Features</a></li>
+      <li><a href="#">Pricing</a></li>
+      <li><a href="#">Signup</a></li>
+      </ul>
+      </div>
+    </div>
 
       <section class="skyprep_hero">
         <div class="container">
-          <div class="hero_message">
-            <h1>Make training productive and easy</h1>
-            <h2>Create online courses and tests in minutes</h2>
-            <p>SkyPrep is cloud based LMS that gives you all the training tools you need to create online courses. Add training material and create tests, then track learner progress.</p>
-            <a class="btn btn-flat btn-large">Try it now</a>
+
+          <div class="row">
+            <div class="span7">
+              <div class="hero_message">
+                <h1>Make training productive and easy</h1>
+                <h2>Create online courses and tests in minutes</h2>
+                <p>SkyPrep is cloud based LMS that gives you all the training tools you need to create online courses. Add training material and create tests, then track learner progress.</p>
+                <a class="btn btn-flat btn-large">Try it now</a>
+              </div>
+            </div>
+            <div class="span5 hidden-phone">
+              <a href="#videoModal" data-toggle="modal"><img class="skyprep-mac-preview" src="assets/img/homepage/skyprep-mac-preview.png" alt="skyprep-mac-preview"></a>
+            </div>
           </div>
-          <a href="#videoModal" data-toggle="modal"><img class="skyprep-mac-preview" src="assets/img/homepage/skyprep-mac-preview.png" alt="skyprep-mac-preview"></a>
 
           <!-- Modal -->
           <div id="videoModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -111,50 +128,55 @@
       <section class="highlights-section">
         <div class="container">
 
-          <ul>
-            <li>
-              <i class="icon-cloud-download"></i>
+        <div class="row-fluid highlights-container">
+          <div class="span4">
+            <i class="icon-cloud-download"></i>
               <div class="media-body">
                 <h4>Secure Data Hosting</h4>
                 Create blog content quickly while getting SEO tips and best practice pointers as you type.
               </div>
-            </li>
-            <li>
-              <i class="icon-adjust"></i>
+          </div>
+          <div class="span4">
+            <i class="icon-adjust"></i>
               <div class="media-body">
                 <h4>No installation</h4>
                 Create blog content quickly while getting SEO tips and best practice pointers as you type.
               </div>
-            </li>
-            <li>
-              <i class="icon-reorder"></i>
+          </div>
+          <div class="span4">
+            <i class="icon-reorder"></i>
               <div class="media-body">
                 <h4>No contracts</h4>
                 Create blog content quickly while getting SEO tips and best practice pointers as you type.
               </div>
-            </li>
-            <li>
-              <i class="icon-cloud-download"></i>
+          </div>
+        </div>
+
+        <div class="row-fluid">
+          <div class="span4">
+            <i class="icon-cloud-download"></i>
               <div class="media-body">
                 <h4>No IT required</h4>
                 Create blog content quickly while getting SEO tips and best practice pointers as you type.
               </div>
-            </li>
-            <li>
-              <i class="icon-bar-chart"></i>
+          </div>
+          <div class="span4">
+            <i class="icon-bar-chart"></i>
               <div class="media-body">
                 <h4>Ease of use</h4>
                 Create blog content quickly while getting SEO tips and best practice pointers as you type.
               </div>
-            </li>
-            <li>
-              <i class="icon-comments-alt"></i>
+          </div>
+          <div class="span4">
+             <i class="icon-comments-alt"></i>
               <div class="media-body">
                 <h4>Loop Analytics</h4>
                 Create blog content quickly while getting SEO tips and best practice pointers as you type.
               </div>
-            </li>
-          </ul>
+          </div>
+        </div>
+
+
 
         </div>
       </section>
@@ -170,32 +192,44 @@
       <section class="testimonials">
         <div class="container">
           <h3>Thousands of Happy Clients Users Skyprep</h3>
-          <ul>
-            <li>
-            <div class="face-display" style="background-image: url('https://s3.amazonaws.com/Tunezy/images/Entertainers+Page/musician.jpg')"></div>
-            <div class="white-box">
-            <b class="arrow-up"></b>
-            <span class="quote-sign">“</span>
-            With the help of SkyPrep's support team, we were able to launch our web portal and start doing sales quickly</div>
-            <span class="testimonial-author">Soheil Alavi</span>
-          </li>
-            <li>
-              <div class="face-display" style="background-image: url('https://s3.amazonaws.com/Tunezy/images/Entertainers+Page/musician.jpg')"></div>
+
+          <div class="row-fluid">
+            <div class="span4">
+              <div class="face-display" style=
+              "background-image: url('https://s3.amazonaws.com/Tunezy/images/Entertainers+Page/musician.jpg')">
+              </div>
+
               <div class="white-box">
-              <b class="arrow-up"></b>
-              <span class="quote-sign">“</span>
-              With the help of SkyPrep's support team, we were able to launch our web portal and start doing sales quickly</div>
-              <span class="testimonial-author">Soheil Alavi</span>
-            </li>
-            <li>
-              <div class="face-display" style="background-image: url('https://s3.amazonaws.com/Tunezy/images/Entertainers+Page/musician.jpg')"></div>
+                <strong class="arrow-up"></strong> <span class="quote-sign">“</span>
+                With the help of SkyPrep's support team, we were able to launch our
+                web portal and start doing sales quickly
+              </div><span class="testimonial-author">Soheil Alavi</span>
+            </div>
+
+            <div class="span4">
+              <div class="face-display" style=
+              "background-image: url('https://s3.amazonaws.com/Tunezy/images/Entertainers+Page/musician.jpg')">
+              </div>
+
               <div class="white-box">
-              <b class="arrow-up"></b>
-              <span class="quote-sign">“</span>
-              With the help of SkyPrep's support team, we were able to launch our web portal and start doing sales quickly</div>
-              <span class="testimonial-author">Soheil Alavi</span>
-            </li>
-          </ul>
+                <strong class="arrow-up"></strong> <span class="quote-sign">“</span>
+                With the help of SkyPrep's support team, we were able to launch our
+                web portal and start doing sales quickly
+              </div><span class="testimonial-author">Soheil Alavi</span>
+            </div>
+
+            <div class="span4">
+              <div class="face-display" style=
+              "background-image: url('https://s3.amazonaws.com/Tunezy/images/Entertainers+Page/musician.jpg')">
+              </div>
+
+              <div class="white-box">
+                <strong class="arrow-up"></strong> <span class="quote-sign">“</span>
+                With the help of SkyPrep's support team, we were able to launch our
+                web portal and start doing sales quickly
+              </div><span class="testimonial-author">Soheil Alavi</span>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -209,7 +243,7 @@
         </div>
       </section>
 
-      <footer>
+      <footer class="visible-desktop">
         <div class="container">
           <ul class="footer-nav">
             <li class="column">

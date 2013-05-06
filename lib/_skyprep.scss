@@ -84,11 +84,8 @@ header {
 // Hero Section
 
 .hero_message {
-  float: left;
-  width: 55%;
   text-shadow: 0 1px 1px $white;
   padding: 70px 0 30px 0;
-  margin-bottom: 60px;
 
   h1 {
     color: $blue;
@@ -116,8 +113,7 @@ header {
 
 .skyprep-mac-preview {
   float: right;
-  @include size(auto, 45%);
-  margin-top: 45px;
+  margin: 40px 0;
 }
 
 // Highlights Section
@@ -126,17 +122,14 @@ header {
   background-color: #e3e3e3;
   border-top: 1px solid #d0d0d0;
   border-bottom: 1px solid #d0d0d0;
-  padding: 15px 0;
+  padding: 40px 0;
 
-  ul {
-    @extend .clearfix;
+  .row-fluid {
 
-    >li {
-      float: left;
-      width: 300px;
-      margin: 30px 20px 30px 0;
+    > .span4 {
       color: $grayLight;
       text-shadow: 0 1px 1px $white;
+      margin-bottom: 40px;
 
       h4 {
         color: $gray;
@@ -147,16 +140,11 @@ header {
         float: left;
         color: $blue;
         font-size: 40px;
-        margin-right: 10px;
+        margin-right: 15px;
       } // i
 
-    } // li
-
-    li:nth-child(3n) {
-      margin-right: 0;
-    }
-
-  } // ul
+    } // span4
+  } // row-fluid
 } // highlits-section
 
 hr {
@@ -324,13 +312,11 @@ hr {
     text-shadow: 0 1px 1px $white;
   }
 
-  ul {
-  @extend .clearfix;
+  .row-fluid {
 
-    li {
+
+    .span4 {
     float: left;
-    width: 300px;
-    margin-right: 20px;
     margin-bottom: 30px;
 
     .face-display {
@@ -368,9 +354,6 @@ hr {
       }
     } // li
 
-    li:nth-child(3n) {
-      margin-right: 0;
-    }
 
   } //ul
 } // testimonials
@@ -737,17 +720,14 @@ hr {
       margin-bottom: 60px;
     }
 
-    ul {
+    .row-fluid {
       @extend .clearfix;
 
-      li {
+      .span4 {
         @extend .white-box;
-        float: left;
         margin-bottom: 20px;
-        margin-right: 20px;
-        width: 300px;
+
         padding: 19px;
-        width: 260px;
         text-align: center;
 
         img {
@@ -756,9 +736,6 @@ hr {
         }
       } // li
 
-      li:nth-child(3n) {
-        margin-right: 0;
-      }
     } // ul
   } // ul
 } // .testimonial-page-wrapper
@@ -940,6 +917,12 @@ hr {
 
 } // signup-heading
 
+.signup-wrapper {
+  .input-prepend input {
+    height: 32px;
+  }
+}
+
 .signup-form {
   padding: 40px 0;
   margin: auto;
@@ -1060,6 +1043,16 @@ hr {
      }
    } // li
 } // sidenav
+
+.navbar-skyprep {
+
+  margin-bottom: 0;
+
+  .navbar-inner {
+     @include border-radius(0);
+     padding: 0;
+  }
+}
 
 // footer
 

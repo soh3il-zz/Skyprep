@@ -5428,13 +5428,13 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus {
 .affix {
   position: fixed; }
 
-.clearfix, .header-nav, .highlights-section ul, .testimonials ul, .feature-list, .marketplace_cards, .testimonial-page-wrapper .testimonial-client-list ul, .pricing-table, .faq-list, footer .footer-nav {
+.clearfix, .header-nav, .feature-list, .marketplace_cards, .testimonial-page-wrapper .testimonial-client-list .row-fluid, .pricing-table, .faq-list, footer .footer-nav {
   *zoom: 1; }
-  .clearfix:before, .header-nav:before, .highlights-section ul:before, .testimonials ul:before, .feature-list:before, .marketplace_cards:before, .testimonial-page-wrapper .testimonial-client-list ul:before, .pricing-table:before, .faq-list:before, footer .footer-nav:before, .clearfix:after, .header-nav:after, .highlights-section ul:after, .testimonials ul:after, .feature-list:after, .marketplace_cards:after, .testimonial-page-wrapper .testimonial-client-list ul:after, .pricing-table:after, .faq-list:after, footer .footer-nav:after {
+  .clearfix:before, .header-nav:before, .feature-list:before, .marketplace_cards:before, .testimonial-page-wrapper .testimonial-client-list .row-fluid:before, .pricing-table:before, .faq-list:before, footer .footer-nav:before, .clearfix:after, .header-nav:after, .feature-list:after, .marketplace_cards:after, .testimonial-page-wrapper .testimonial-client-list .row-fluid:after, .pricing-table:after, .faq-list:after, footer .footer-nav:after {
     display: table;
     content: "";
     line-height: 0; }
-  .clearfix:after, .header-nav:after, .highlights-section ul:after, .testimonials ul:after, .feature-list:after, .marketplace_cards:after, .testimonial-page-wrapper .testimonial-client-list ul:after, .pricing-table:after, .faq-list:after, footer .footer-nav:after {
+  .clearfix:after, .header-nav:after, .feature-list:after, .marketplace_cards:after, .testimonial-page-wrapper .testimonial-client-list .row-fluid:after, .pricing-table:after, .faq-list:after, footer .footer-nav:after {
     clear: both; }
 
 .hide-text {
@@ -5508,11 +5508,8 @@ header {
     color: rgba(255, 255, 255, 0.6); }
 
 .hero_message {
-  float: left;
-  width: 55%;
   text-shadow: 0 1px 1px white;
-  padding: 70px 0 30px 0;
-  margin-bottom: 60px; }
+  padding: 70px 0 30px 0; }
   .hero_message h1 {
     color: #2f5595;
     font-size: 28px;
@@ -5531,30 +5528,24 @@ header {
 
 .skyprep-mac-preview {
   float: right;
-  width: 45%;
-  height: auto;
-  margin-top: 45px; }
+  margin: 40px 0; }
 
 .highlights-section {
   background-color: #e3e3e3;
   border-top: 1px solid #d0d0d0;
   border-bottom: 1px solid #d0d0d0;
-  padding: 15px 0; }
-  .highlights-section ul > li {
-    float: left;
-    width: 300px;
-    margin: 30px 20px 30px 0;
+  padding: 40px 0; }
+  .highlights-section .row-fluid > .span4 {
     color: #999999;
-    text-shadow: 0 1px 1px white; }
-    .highlights-section ul > li h4 {
+    text-shadow: 0 1px 1px white;
+    margin-bottom: 40px; }
+    .highlights-section .row-fluid > .span4 h4 {
       color: #555555; }
-    .highlights-section ul > li i {
+    .highlights-section .row-fluid > .span4 i {
       float: left;
       color: #2f5595;
       font-size: 40px;
-      margin-right: 10px; }
-  .highlights-section ul li:nth-child(3n) {
-    margin-right: 0; }
+      margin-right: 15px; }
 
 hr {
   border-bottom: 1px solid #cccccc;
@@ -5656,7 +5647,7 @@ hr {
   -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5) inset, 0 0 2px 1px rgba(0, 0, 0, 0.05) inset;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5) inset, 0 0 2px 1px rgba(0, 0, 0, 0.05) inset; }
 
-.white-box, .feature-list > li, .course-price-box, .testimonial-page-wrapper .testimonial-client-list ul li, .pricing-table > li {
+.white-box, .feature-list > li, .course-price-box, .testimonial-page-wrapper .testimonial-client-list .row-fluid .span4, .pricing-table > li {
   background-color: white;
   border: 1px solid #e1e1e1;
   padding: 25px;
@@ -5723,36 +5714,32 @@ hr {
     text-align: center;
     padding: 30px 0;
     text-shadow: 0 1px 1px white; }
-  .testimonials ul li {
+  .testimonials .row-fluid .span4 {
     float: left;
-    width: 300px;
-    margin-right: 20px;
     margin-bottom: 30px; }
-    .testimonials ul li .face-display {
+    .testimonials .row-fluid .span4 .face-display {
       margin: auto; }
-    .testimonials ul li .white-box, .testimonials ul li .feature-list > li, .testimonials ul li .course-price-box, .testimonials .testimonial-page-wrapper .testimonial-client-list ul li li, .testimonial-page-wrapper .testimonial-client-list .testimonials ul li li, .testimonials ul li .pricing-table > li {
+    .testimonials .row-fluid .span4 .white-box, .testimonials .row-fluid .span4 .feature-list > li, .testimonials .row-fluid .span4 .course-price-box, .testimonials .testimonial-page-wrapper .testimonial-client-list .row-fluid .span4 .span4, .testimonial-page-wrapper .testimonial-client-list .testimonials .row-fluid .span4 .span4, .testimonials .row-fluid .span4 .pricing-table > li {
       position: relative;
       margin-top: 30px;
       font-style: italic;
       font-size: 16px;
       font-weight: 400; }
-      .testimonials ul li .white-box .arrow-up, .testimonials ul li .feature-list > li .arrow-up, .testimonials ul li .course-price-box .arrow-up, .testimonials .testimonial-page-wrapper .testimonial-client-list ul li li .arrow-up, .testimonial-page-wrapper .testimonial-client-list .testimonials ul li li .arrow-up, .testimonials ul li .pricing-table > li .arrow-up {
+      .testimonials .row-fluid .span4 .white-box .arrow-up, .testimonials .row-fluid .span4 .feature-list > li .arrow-up, .testimonials .row-fluid .span4 .course-price-box .arrow-up, .testimonials .testimonial-page-wrapper .testimonial-client-list .row-fluid .span4 .span4 .arrow-up, .testimonial-page-wrapper .testimonial-client-list .testimonials .row-fluid .span4 .span4 .arrow-up, .testimonials .row-fluid .span4 .pricing-table > li .arrow-up {
         position: absolute;
         top: -10px;
         left: 48%;
         border-bottom: 11px solid white; }
-      .testimonials ul li .white-box .quote-sign, .testimonials ul li .feature-list > li .quote-sign, .testimonials ul li .course-price-box .quote-sign, .testimonials .testimonial-page-wrapper .testimonial-client-list ul li li .quote-sign, .testimonial-page-wrapper .testimonial-client-list .testimonials ul li li .quote-sign, .testimonials ul li .pricing-table > li .quote-sign {
+      .testimonials .row-fluid .span4 .white-box .quote-sign, .testimonials .row-fluid .span4 .feature-list > li .quote-sign, .testimonials .row-fluid .span4 .course-price-box .quote-sign, .testimonials .testimonial-page-wrapper .testimonial-client-list .row-fluid .span4 .span4 .quote-sign, .testimonial-page-wrapper .testimonial-client-list .testimonials .row-fluid .span4 .span4 .quote-sign, .testimonials .row-fluid .span4 .pricing-table > li .quote-sign {
         position: absolute;
         left: -10px;
         top: 10px;
         font-style: normal; }
-    .testimonials ul li .testimonial-author {
+    .testimonials .row-fluid .span4 .testimonial-author {
       float: right;
       color: #999999;
       padding: 5px 0;
       text-shadow: 0 1px 1px white; }
-  .testimonials ul li:nth-child(3n) {
-    margin-right: 0; }
 
 .feature-page {
   padding: 60px 0; }
@@ -6016,19 +6003,13 @@ hr {
     text-align: center;
     color: #555555;
     margin-bottom: 60px; }
-  .testimonial-page-wrapper .testimonial-client-list ul li {
-    float: left;
+  .testimonial-page-wrapper .testimonial-client-list .row-fluid .span4 {
     margin-bottom: 20px;
-    margin-right: 20px;
-    width: 300px;
     padding: 19px;
-    width: 260px;
     text-align: center; }
-    .testimonial-page-wrapper .testimonial-client-list ul li img {
+    .testimonial-page-wrapper .testimonial-client-list .row-fluid .span4 img {
       height: 120px;
       width: auto; }
-  .testimonial-page-wrapper .testimonial-client-list ul li:nth-child(3n) {
-    margin-right: 0; }
 
 .pricing-plan {
   padding: 40px 0; }
@@ -6151,6 +6132,9 @@ hr {
     font-weight: 400;
     margin-top: 5px; }
 
+.signup-wrapper .input-prepend input {
+  height: 32px; }
+
 .signup-form {
   padding: 40px 0;
   margin: auto;
@@ -6227,6 +6211,14 @@ hr {
       margin-right: 10px; }
   .sidenav li.active a {
     color: #555555; }
+
+.navbar-skyprep {
+  margin-bottom: 0; }
+  .navbar-skyprep .navbar-inner {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    padding: 0; }
 
 footer {
   background-color: #2f5595;
