@@ -5788,6 +5788,17 @@ hr {
   .feature-list .feature-items li:last-child {
     border-bottom: none; }
 
+.homepage-features {
+  background-image: url(../img/homepage/feature-section-bg.png);
+  background-repeat: repeat;
+  border-bottom: 1px solid #d0d0d0;
+  padding: 40px 0 0; }
+
+.feature-msg p {
+  color: #555555;
+  text-shadow: 0 1px 1px white;
+  margin-bottom: 40px; }
+
 .marketplace-page {
   padding: 40px 0; }
   .marketplace-page h2 {

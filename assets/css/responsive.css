@@ -551,6 +551,9 @@
     .feature-list > li .feature-title {
       font-size: 16px; }
 
+  .feature-msg p {
+    margin-bottom: 0px; }
+
   .tour-wrapper h1 {
     font-size: 18px; }
   .tour-wrapper h2 {
