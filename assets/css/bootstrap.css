@@ -5460,6 +5460,10 @@ ul, li {
   margin: 0;
   padding: 0; }
 
+.list-items li {
+  list-style: disc inside;
+  margin: 10px 0; }
+
 header {
   background-color: #2f5595;
   padding: 15px 0; }
@@ -6162,15 +6166,17 @@ hr {
     text-align: center;
     margin-top: 20px; }
 
-.tour-wrapper {
+.tour-wrapper, .employee-training {
   padding: 30px 0; }
-  .tour-wrapper h1 {
+  .tour-wrapper h1, .employee-training h1 {
     font-size: 32px; }
-  .tour-wrapper h2 {
+  .tour-wrapper h2, .employee-training h2 {
     font-size: 28px;
     font-weight: 400;
     color: #555555; }
-  .tour-wrapper p {
+  .tour-wrapper h4, .employee-training h4 {
+    color: #5a5a5a; }
+  .tour-wrapper p, .employee-training p {
     font-size: 16px;
     line-height: 26px;
     text-shadow: 0 1px 1px white;
@@ -6220,6 +6226,8 @@ hr {
     -webkit-box-shadow: 0 1px 0 white;
     -moz-box-shadow: 0 1px 0 white;
     box-shadow: 0 1px 0 white; }
+  .sidenav .test-maker-nav {
+    margin-top: 40px; }
   .sidenav li a {
     color: #2f5595;
     padding: 15px 0;
