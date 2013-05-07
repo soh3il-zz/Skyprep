@@ -1032,6 +1032,12 @@ hr {
 .sidenav{
   margin-top: 20px;
 
+  hr {
+    margin: 18px 0;
+    border-bottom: 1px solid #BFBFBF;
+    @include box-shadow(0 1px 0 white);
+  }
+
   li {
 
     a {
@@ -1054,7 +1060,7 @@ hr {
 
      &.active {
        a {
-         color: $gray;
+         color: $green;
        }
      }
    } // li

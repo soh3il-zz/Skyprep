@@ -6208,6 +6208,12 @@ hr {
 
 .sidenav {
   margin-top: 20px; }
+  .sidenav hr {
+    margin: 18px 0;
+    border-bottom: 1px solid #bfbfbf;
+    -webkit-box-shadow: 0 1px 0 white;
+    -moz-box-shadow: 0 1px 0 white;
+    box-shadow: 0 1px 0 white; }
   .sidenav li a {
     color: #2f5595;
     padding: 15px 0;
@@ -6221,7 +6227,7 @@ hr {
       vertical-align: -1px;
       margin-right: 10px; }
   .sidenav li.active a {
-    color: #555555; }
+    color: #60a205; }
 
 .navbar-skyprep {
   margin-bottom: 0; }
