@@ -6178,6 +6178,12 @@ hr {
     margin-bottom: 80px;
     overflow: hidden; }
 
+#create-courses img {
+  float: right;
+  margin: 10px 0 0 35px;
+  width: 120px;
+  height: auto; }
+
 #user-management img {
   float: left;
   margin: 10px 35px 0 0;
