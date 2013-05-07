@@ -6166,17 +6166,17 @@ hr {
     text-align: center;
     margin-top: 20px; }
 
-.tour-wrapper, .employee-training {
+.tour-wrapper, .employee-training-wrapper {
   padding: 30px 0; }
-  .tour-wrapper h1, .employee-training h1 {
+  .tour-wrapper h1, .employee-training-wrapper h1 {
     font-size: 32px; }
-  .tour-wrapper h2, .employee-training h2 {
+  .tour-wrapper h2, .employee-training-wrapper h2 {
     font-size: 28px;
     font-weight: 400;
     color: #555555; }
-  .tour-wrapper h4, .employee-training h4 {
+  .tour-wrapper h4, .employee-training-wrapper h4 {
     color: #5a5a5a; }
-  .tour-wrapper p, .employee-training p {
+  .tour-wrapper p, .employee-training-wrapper p {
     font-size: 16px;
     line-height: 26px;
     text-shadow: 0 1px 1px white;
@@ -6250,6 +6250,12 @@ hr {
     -moz-border-radius: 0;
     border-radius: 0;
     padding: 0; }
+
+.about-page {
+  margin: 60px 0; }
+  .about-page p {
+    text-shadow: 0 1px 1px white;
+    line-height: 24px; }
 
 footer {
   background-color: #2f5595;
