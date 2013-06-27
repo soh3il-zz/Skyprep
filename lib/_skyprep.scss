@@ -807,6 +807,32 @@ hr {
   }
 }
 
+
+.pricing-table-solo {
+  @extend .clearfix;
+  margin-top: 40px;
+  width: 350px;
+  margin: 40px auto 0 auto;
+
+  > li {
+    @extend .white-box;
+    width: 168px;
+    float: left;
+    margin-right: 20px;
+    @include box-shadow (0 1px 2px #D0D0D0);
+    padding: 0;
+    width: 350px;
+    position: relative;
+
+  }
+
+  li:last-child {
+    margin-right: 0
+  }
+}
+
+
+
 .price-plan-title {
   background-color: lighten($grayLighter, 3%);
   text-align: center;
