@@ -1039,7 +1039,6 @@ hr {
   }
 }
 
-
 #user-management {
 
   img {
@@ -1048,6 +1047,22 @@ hr {
     width: 75px;
     height: auto;
   }
+}
+
+/* Generic classes for Tour page */
+
+.tour-style-right {
+    float: right;
+    margin: 10px 0 0 35px;
+    width: 120px;
+    height: auto;
+}
+
+.tour-style-left {
+    float: left;
+    margin: 10px 35px 0 0;
+    width: 120px;
+    height: auto;
 }
 
 #platform-branding, #eCommerce-platform {
