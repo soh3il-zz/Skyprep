@@ -124,6 +124,22 @@ header {
   margin: 40px 0;
 }
 
+// Used by Section
+
+#usedby-section {
+  border-top: 1px solid #D0D0D0;
+  background-color: #F2F2F2;
+}
+
+.usedby {
+  background-image: url(../img/homepage/usedby.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 77px;
+  background-size: 940px auto;
+  padding: 80px 0 0;
+}
+
 // Highlights Section
 
 .highlights-section {
