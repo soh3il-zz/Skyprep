@@ -6293,6 +6293,9 @@ hr {
     border-radius: 0;
     padding: 0; }
 
+#exam-page {
+  padding: 40px 0; }
+
 .about-page {
   margin: 60px 0; }
   .about-page p {
